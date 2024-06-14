@@ -2,15 +2,20 @@
 {
     internal class Program
     {
+        // Hoang Khoi Gia Nguyen
+        // CSI 120 - Computer Programming 120
+        // Check for Winner - Tic Tac Toe
         static void Main(string[] args)
         {
+            // Setting up the board you want to check
             char[,] board = {
        {'O', ' ', 'X'},
        {'O', 'X', 'O'},
        {'O', ' ', 'X'},
    };
+            // Set the condition for a winning player
             char winner = WinCondition(board);
-
+            // Print out the result
             if (winner != ' ')
             {
                 Console.WriteLine("There is a winner!");
